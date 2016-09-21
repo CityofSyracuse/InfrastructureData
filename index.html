@@ -57,6 +57,7 @@
       <div class="container">
         <h1>Data of Infrastructure</h1>
         <p>Much of the City of Syracuse's infrastructure has aged past its useful life. In order to tackle the issues in the most efficient and effective ways, the City is using data to documents and prioritize projects.</p>
+        <p> Using data to change the infrastructure paradigm. </p>
       </div>
     </div>
 
@@ -85,10 +86,10 @@
     <div class="container">
       <div class="row">
         <h2>
-          Reacting to infrastructure
+          Reacting to water infrastructure problems
         </h2>
         <p>
-          We know where water main breaks have happened, and we can analyze where in the city there are a large number of water main breaks. Below, the blue dots show where each water main break has happened since 2004. The red shading shows where in the city the highest density of water main breaks have happened.
+          Syracuse delivers some of the cleanest water in the nation, but many pipes in the system date back more than 100 years. We know where water main breaks happen, and we can analyze where in the city there are a large number of water main breaks. Below, the blue dots show where each water main break has happened since 2004. The red shading shows where in the city the highest density of water main breaks have happened.
         </p>
         <p>
           Downtown Syracuse is always a location for many water main breaks. There are other locations, like in the northside neighborhood, where a large number of water main breaks happen as well.
@@ -97,48 +98,17 @@
       <div class="row">
         <img class="img-responsive center-block" width="50%" SRC="./gif/MapGif.gif">
       </div>
-      <div class="row">
-      <p>
-        Knowing where water main breaks have happened is good, but it also means the City is being responsive instead of proactive.
-      </p>
-    </div>
-    <div class="row">
-      <p>
-        The City provides people an opportunity to complain about issues in the city, like the presence of potholes.
-      </p>
-      <p>
-        We can see where people complain about potholes most.
-      </p>
 
-  <div class="row">
-    <img class="img-responsive center-block" width="50%" SRC="./assets/potholecomplaints.png">
-  </div>
-      <p>This is a reactive solution, though.</p>
-    </div>
   </div>
 <div class="container">
   <div class="row">
-    <h2>Proactive</h2>
-    <p>The City of Syracuse is good at reacting to infrastructure problems. Most water main breaks are fixed in around eight hours, and potholes that have been complained about are filled in about six days. Reacting to infrastructure issues, though, means the problems will continue, and the City will not do enough to get to the problems before they happen.</p>
-    <p>Proactive solutions are critical, but difficult. Thousands of potholes appear each year in Syracuse, and water mains are underground, so it is difficult to assess risk.</p>
-    <p>This is where data can help us.</p>
+    <h2>Proactively addressing water infrastructure problems</h2>
+    <p>The City of Syracuse is good at reacting to infrastructure problems. Most water main breaks are fixed in around eight hours, and potholes that have been complained about are filled in about six days. Reacting to infrastructure issues, though, means the problems will continue, and the City will not do enough to fix the problems before they happen.</p>
+    <p>Addressing water infrastructure proactively is difficult because the pipes are below ground and cannot be seen without digging into the earth. Using new data analysis techniques and 21st century technologies, can help the City see the system's weaknesses without digging.</p>
   </div>
+
   <div class="row">
-    <h3>Potholes</h3>
-    <p>Until 2016, the City of Syracuse only tracked when potholes were complained about, and when those specific potholes were filled. The department of public works (DPW) fills many more potholes, they just weren't tracked.</p>
-    <p>Additionally, DPW rated the quality of roads every year. This was done on a 1-10 scale, and while the rating system worked well, it was somewhat subjective since a person was doing the ratings.</p>
-    <p>Finding ways to track all the potholes filled, and automating the collection of road quality ratings would help to make operations more proactive. GPS units were put on all DPW vehicles, and each time the pothole filling machines filled a pothole, a row of data was logged to track the time and location of that pothole. Immediately, the City was tracking thousands of potholes being filled.</p>
-    <div class="row">
-      <img class="img-responsive center-block" width="50%" SRC="./assets/PotholesFilled.gif">
-    </div>
-    <p>To supplement the road rating process, the City is now working with a company called <a href="http://www.argolabs.org/blog-1/?category=squid">Argo Labs</a> and using their product, SQUID. IT is a low-cost computer, attached to a vehicle, that measures the bumpiness of a road using an accelerometer, and photographs the street with an attached camera. Logging the hundreds of miles of roads gives more information about the quality of the road.</p>
-    <div class="row">
-      <img class="img-responsive center-block" width="50%" SRC="./assets/squid.jpg">
-    </div>
-  </div>
-  <div class="row">
-    <h3>Water Mains</h3>
-    <p>Identifying risk with water mains is hard because the pipes are below the ground, so we cannot see them on a daily basis. Assessing them requires expensive equipment and staff-time.</p>
+    <h3>Predictive Models</h3>
     <p>Using data, we can use the history of water main breaks, and the attributes of water mains, to inform which pipes might be most risky in the future.</p>
     <p>Partnering with the Eric & Wendy Schmidt Data Science for Social Good Summer Fellowship, we worked to build a predictive model that tells us which water mains have the highest risk of breaking in the next three years. If we chose 50 blocks in the city at random, we would expect about 5 of them to have a water main break on them by the end of 2018. Using this model, <strong>the top 50 riskiest blocks in the city should have 32 water main breaks on them by the end of 2018.</strong></p>
     <p>The map below shows where the top 50 (red) and top 500 (yellow) riskiest blocks are in the city. The blue dots show where water main breaks have happened so far this year. The model is not perfect, but it gives us better intelligence about our water mains at a full city-scale than ever before.
@@ -149,6 +119,49 @@
   <div class="row">
     <p>Knowing where water mains are riskiest is not just important for City operations, but it impacts the residents and businesses in the city. The map below shows the riskiest 50 blocks of water mains, as well as the buildings on each of those blocks. When a water main break happens, a restaurant will be forced to close, or a family won't be able to use water to cook, or shower. Using data to help operations ultimately saves money and hassle for the city and its residents.</p>
       <iframe class="embed-responsive-item" width="100%" height="400" src="./assets/parcelMap.html"  frameBorder="0"></iframe>
+  <div class="row">
+    <h3>Leak Detection Sensors</h3>
+    <p>Sensors placed on water mains listen to the flow of water through the pipes. Leaks are detected when that consistent sound changes. The City of Syracuse is politing various water main sensors in the downtown neighborhood of the city based on data analysis that showed breaks happen most frequently in the Central Business District. The objective from the pilot is that the City will be able to detect small water main leaks before they turn into breaks, and can then fix the problem with less disruption to homes and businesses in the area, and less destruction of the road when digging into the ground.</p>
+    <p>In order for the sensors to work, pipe length, diameter, and material needs to be known. Documenting these attributes helps to ensure that when crews dig into the ground - both from the Water Department and other agencies - workers will know what is below the ground, eliminating any "peek and shriek" possiblities.
+      <img class="img-responsive center-block" width="50%" SRC="./assets/SensorMap.png">
+      <p>The pricing of these sensors varies from vendor-to-vendor, but the City could place sensors on all of the water mains downtown for around $50,000. Cities like South Bend, Indiana have partnered with local universities to help build sensors to monitor infrastructure. South Bend has sensors on their sewer systems to warn when they are filling too quickly. The sewage is then diverted so overflows are minimized. This low cost option, like that of water sensors, offer high potential for savings as well as better maintenance of the system, and are attainable by smaller and larger cities, alike.</p>
+  </div>
+      <div class="row">
+        <h1>Potholes</h1>
+      <p>
+        Knowing where water main breaks have happened is good, but it also means the City is being responsive instead of proactive.
+      </p>
+      </div>
+      <div class="row">
+      <p>
+        The City provides people an opportunity to complain about issues in the city, like the presence of potholes.
+      </p>
+      <p>
+        We can see where people complain about potholes most.
+      </p>
+
+      <div class="row">
+      <img class="img-responsive center-block" width="50%" SRC="./assets/potholecomplaints.png">
+      </div>
+      <p>This is a reactive solution, though.</p>
+      </div>
+      <div class="row">
+        <h3>Potholes</h3>
+        <p>Until 2016, the City of Syracuse only tracked when potholes were complained about, and when those specific potholes were filled. The department of public works (DPW) fills many more potholes, they just weren't tracked.</p>
+        <p>Additionally, DPW rated the quality of roads every year. This was done on a 1-10 scale, and while the rating system worked well, it was somewhat subjective since a person was doing the ratings.</p>
+        <p>Finding ways to track all the potholes filled, and automating the collection of road quality ratings would help to make operations more proactive. GPS units were put on all DPW vehicles, and each time the pothole filling machines filled a pothole, a row of data was logged to track the time and location of that pothole. Immediately, the City was tracking thousands of potholes being filled.</p>
+        <div class="row">
+          <img class="img-responsive center-block" width="50%" SRC="./assets/PotholesFilled.gif">
+        </div>
+        <p>To supplement the road rating process, the City is now working with a company called <a href="http://www.argolabs.org/blog-1/?category=squid">Argo Labs</a> and using their product, SQUID. IT is a low-cost computer, attached to a vehicle, that measures the bumpiness of a road using an accelerometer, and photographs the street with an attached camera. Logging the hundreds of miles of roads gives more information about the quality of the road.</p>
+        <div class="row">
+          <img class="img-responsive center-block" width="50%" SRC="./assets/squid.jpg">
+        </div>
+      </div>
+
+
+
+
 
   </div>
   <div class="container">
